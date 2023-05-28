@@ -6,10 +6,6 @@ import { defaultHomepage } from "discourse/lib/utilities";
 export default Component.extend({
   router: service(),
 
-  bannerLinks: computed(function () {
-    return JSON.parse(settings.banner_links);
-  }),
-
   @discourseComputed("currentUser")
   showTrust(currentUser) {
     return (

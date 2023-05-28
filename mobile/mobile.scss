@@ -2,18 +2,14 @@
 .below-site-header-outlet.welcome-link-banner-connector {
   .welcome-link-banner-wrapper {
     background-image: url(#{$mobile-banner-background-image});
-    .welcome-wrapper {
-      .featured-banner-link {
-        flex-direction: row;
-        padding-bottom: 1.5em;
-        & > div a {
-          padding: 0 5px;
-          h3 {
-            font-size: 0.75em;
-            white-space: normal;
-          }
-        }
-      }
-    }
+    background-color: #{$banner-background-color};
+    //background-image: url(#{$banner-background-image});
+    background-size: #{$banner-background-size};
+    background-repeat: #{$banner-background-repeat};
+    background-position: center center;
+    padding-bottom: 21%;//57老师朋友的建议
+    margin-bottom:  auto;
+    width: 100%;
+    height: 100px;
   }
 }

@@ -7,13 +7,6 @@ show_on:
     - all
   description: discovery refers to topic list pages
 
-banner_links:
-  default: >-
-    [{"icon":"info-circle","text":"about this site","url":"/faq"},
-    {"icon":"user-friends","text":"meet our staff","url":"/about"},
-    {"icon":"star","text":"your preferences","url":"/my/preferences"}]
-  json_schema: '{ "type": "array", "format": "table", "uniqueItems": true, "items": { "type": "object", "properties": { "icon": { "type": "string", "minLength": 1 }, "text": { "type": "string", "minLength": 1 }, "url": { "type": "string" } }, "additionalProperties": false } }'
-
 max_trust_level:
   type: integer
   default: 1
@@ -56,22 +49,6 @@ banner_background_color:
   type: string
   default: "var(--tertiary-low)"
 
-banner_box_background_color:
-  type: string
-  default: "var(--secondary)"
-
-banner_text_color:
-  type: string
-  default: "var(--primary)"
-
-banner_icon_color:
-  type: string
-  default: "var(--primary-high)"
-
-banner_link_color:
-  type: string
-  default: "var(--tertiary)"
-
 svg_icons:
   default: "user-friends"
   type: "list"
@@ -85,7 +62,7 @@ layout:
     - "text-top"
 
 plugin_outlet:
-  default: "below-site-header"
+  default: "above-site-header"
   type: "enum"
   choices:
     - "below-site-header"
